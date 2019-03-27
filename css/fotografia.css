@@ -66,9 +66,12 @@ header label:hover{
 }
 /*centro*/
 .central{
+	display: block;
 	width: 100%;
 	height: 430px;
 	border-top: 1px solid green;
+
+
 }
 
 /*imagen centro*/
@@ -79,44 +82,116 @@ header label:hover{
 	border: solid 1px green;
 
 }
-img{
-	padding: 3%;
-	display: block;
-	margin: auto;
+/*fotos y imagen*/
+#imagen{
+	width: 65%;
+	height: 200px;
+	display: flex;
+	margin:auto;
+	padding: 6px;
+	
 }
+
+
+
+
 /*imagen centro 2*/
 .imagenabajo{
+	display: block;
 	width: 100%;
 	height: 50%;
-	background:  #82c3a6;
+	background:  #d5c75f;
 	border: solid 1px green;
+
 }
-#foto{
+
+/*imagen lado derecha*/
+#paisajes{
+	float: right;
 	width: 50%;
 	height: 100%;
 	border: solid 1px green;
 }
+#imagen2{
+	display: block;
+	margin:auto;
+	padding: 3%;
+	border: solid 1px green;
+	transition-property: all;
+}
+#imagen2{
+	transform:translateY(10px);
+	transform:translateY(-10px);
+}
 
-.foto2{
+/*imagen lado izquierda*/
+#retratos{
 	
 	width: 50%;
 	height: 100%;
-	border: solid 1px green;
+	border: solid 2px green ;
+	 
 }
+/*imagen lado izquierda*/
 
-img{
-	float: center;
+#imagen3{
+		display: block;
+	margin:auto;
+	padding: 3%;
+	border: solid 1px #82c3a6;
 }
+#imagen3:hover {
+	
+	-webkit-transform: rotate(10deg);
+ -moz-transform: rotate(10deg);
+ -ms-transform: rotate(10deg);
+ transform: rotate(10deg);
 
+}
 
 /*pie de pagina*/
 #piepagina{
 	width: 100%;
 	height:100px;
+	display: flex;
 	border: solid 1px green;
 	float: fixed;
+	border-radius: 10px;
+	background: #C6d5c5;
 }
+.contactos{
+	
+	width: 25%;
+	height:100%;
+	border: solid 1px green;
 
+}
+#texto{
+	text-align: center;
+}
+h4{
+	text-align: center;
+	height: 10px;
+	height: 10px;
+}
+.terminos{
+
+	width: 25%;
+	height:100%;
+	border: solid 1px green;
+}
+.redessociales{
+	width: 25%;
+	height:100%;
+	border: solid 1px green;
+
+}
+.derechos{
+	width: 25%;
+	height:100%;
+	border: solid 1px green;
+
+}
 @media (max-width:768px){
 header label{
 	display: block;}
@@ -138,7 +213,10 @@ header label{
 	margin:0;
 }
 
-
+img{
+	display: flex;
+	flex-direction: column;
+}
 
 
 
