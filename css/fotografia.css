@@ -1,11 +1,14 @@
 
-
+html{
+	font-size: 16px;
+	text-transform: Dancing Script;
+}
 
 body{
 	height: 80%;
 	margin: 0;
 	font-family: sans-serif;
-	border: solid 1px green;
+	
 }
 
 
@@ -19,22 +22,22 @@ header{
 /*navegacion*/
 #btn-menu{
 	display: none;
+	margin: auto;
 
 }
 header label {
 	display:none;
 	width: 20px;
-	height: 20px;
+	height:20px;
 	padding:10px;
-	border-right: 1px solid green;
+	
 
 }
 /*textotitulo*/
 h1{
-	margin: 0px;
-	padding: 0px;
+	margin: 0;
+	padding: 0;
 	text-align: left;
-	color: white;
 	text-shadow: 2px 2px #02010a;
 
 }
@@ -59,17 +62,17 @@ header label:hover{
 
 .menu  li a {
 	display:block;
-	margin: 10%;
-	padding:  20px;
+	margin: 5%;
+	padding:  10px;
 	text-decoration: none;
-	color:white;
+	color:  #02010a;
 }
 /*centro*/
 .central{
 	display: block;
 	width: 100%;
-	height: 430px;
-	border-top: 1px solid green;
+	height: 440px;
+
 
 
 }
@@ -79,17 +82,17 @@ header label:hover{
 	width: 100%;
 	height: 50%;
 	background:  #82c3a6;
-	border: solid 1px green;
+	
 
 }
 /*fotos y imagen*/
 #imagen{
 	width: 65%;
-	height: 200px;
+	height: 90%;
 	display: flex;
 	margin:auto;
 	padding: 6px;
-	
+	border: solid 2px #02010a;
 }
 
 
@@ -99,62 +102,82 @@ header label:hover{
 .imagenabajo{
 	display: block;
 	width: 100%;
-	height: 50%;
+	height: 60%;
+	background:  #d5c75f;
+	
+
+}
+
+.flexbox {
+	width: 100%;
+	height: 100%;
 	background:  #d5c75f;
 	border: solid 1px green;
-
+        display: -ms-flex;
+        display: -webkit-flex;
+        display: flex;
 }
 
-/*imagen lado derecha*/
-#paisajes{
-	float: right;
-	width: 50%;
-	height: 100%;
-	border: solid 1px green;
-}
-#imagen2{
-	display: block;
-	margin:auto;
-	padding: 3%;
-	border: solid 1px green;
-	transition-property: all;
-}
-#imagen2{
-	transform:translateY(10px);
-	transform:translateY(-10px);
+.flexbox> div {
+        width: 50%;
+        height: 100%;
+        padding: 0px;
+        background:  #d5c75f;
 }
 
+.flexbox > div:first-child {
+        margin-right: 2px;
+}
 /*imagen lado izquierda*/
-#retratos{
+#paisaje{
 	
 	width: 50%;
 	height: 100%;
-	border: solid 2px green ;
+	
 	 
 }
 /*imagen lado izquierda*/
 
-#imagen3{
+#imagen2{
 		display: block;
 	margin:auto;
 	padding: 3%;
-	border: solid 1px #82c3a6;
+	border: solid 2px #02010a;
 }
-#imagen3:hover {
-	
+#imagen2:hover {
+	background: #82c3a6;
 	-webkit-transform: rotate(10deg);
- -moz-transform: rotate(10deg);
- -ms-transform: rotate(10deg);
- transform: rotate(10deg);
+ 	
+
+}
+/*imagen lado derecha*/
+#retratos{
+	float: right;
+	width: 50%;
+	height: 100%;
+	
+}
+#imagen3{
+	display: block;
+	margin:auto;
+	padding: 3%;
+	transition-property: all;
+	border: solid 2px #02010a;
+
+}
+#imagen3:hover{
+	transform: translate(20px,-5px);
+   	border: solid 2px #02010a;
+   	background: #82c3a6;
 
 }
 
 /*pie de pagina*/
-#piepagina{
+.piepagina{
 	width: 100%;
-	height:100px;
+	height:150px;
 	display: flex;
-	border: solid 1px green;
+	
 	float: fixed;
 	border-radius: 10px;
 	background: #C6d5c5;
@@ -163,38 +186,128 @@ header label:hover{
 	
 	width: 25%;
 	height:100%;
-	border: solid 1px green;
-
+	
+	font-family:- "Dancing Script";
 }
+
 #texto{
 	text-align: center;
+	font-family: "Dancing Script";
+	color:  #02010a;
 }
 h4{
+text-align: center;
+	font-family: "Dancing Script";
+	color:  #02010a;	
+}
+
+ul li #correo{S
+
 	text-align: center;
-	height: 10px;
-	height: 10px;
 }
 .terminos{
-
 	width: 25%;
 	height:100%;
-	border: solid 1px green;
+	font-family:"Dancing Script";
+}
+
+#terminos{
+	text-align: center;
+	color:  #02010a;
 }
 .redessociales{
 	width: 25%;
 	height:100%;
-	border: solid 1px green;
 
+	
+}
+
+#redessociales{
+	text-align: center;
+	font-family:"Dancing Script";
+	color:  #02010a;
+}
+.social {
+	right: 0;
+	top: 25%;
+	font-size: 1.5rem;
+	display: flex;
+	flex-direction: column;
+	align-items: flex-start;
+	z-index: 100;
+
+}
+
+.icon {
+	display: flex;
+	color: white;
+	text-decoration: none;
+	padding: .4rem;
+	
+	transition: all .5s;
+}
+
+.icon-facebook {
+	background: #2E406E;
+}
+
+.icon-twitter {
+	background: #339DC5;
+}
+
+
+
+.icon-instagram {
+	 background: #f09433; 
+background: -moz-linear-gradient(45deg, #f09433 0%, #e6683c 25%, #dc2743 50%, #cc2366 75%, #bc1888 100%); 
+background: -webkit-linear-gradient(45deg, #f09433 0%,#e6683c 25%,#dc2743 50%,#cc2366 75%,#bc1888 100%); 
+background: linear-gradient(45deg, #f09433 0%,#e6683c 25%,#dc2743 50%,#cc2366 75%,#bc1888 100%); 
+
+}
+
+.icon:first-child {
+	border-radius: 0  1rem 0 0 ;
+}
+
+.icon:last-child {
+	border-radius:  0 0 1rem;
+}
+
+.icon:hover {
+	padding-right: 6rem;
+	border-radius: 1rem 0 0 1rem;
+	box-shadow: 0 0 .5rem rgba(0, 0, 0, 0.42);
 }
 .derechos{
+
 	width: 25%;
 	height:100%;
-	border: solid 1px green;
-
+	
+	font-family: "Dancing Script";
 }
+#derechos{
+	text-align: center;
+	color:  #02010a;
+}
+.copy {
+
+display: inline-block;
+text-align: center;
+margin: 5px;
+-moz-transform: scaleX(1);
+-o-transform: scaleX(1);
+-webkit-transform: scaleX(1);
+transform: scaleX(1);
+filter: FlipH;
+-ms-filter: "FlipH";
+}
+
+
 @media (max-width:768px){
 header label{
-	display: block;}
+	display: block;
+}
+
 .menu{
 	position: absolute;
 	background:#5b7989;
@@ -204,7 +317,7 @@ header label{
 	transition: all 1.0s;
 }
 .menu ul {
-	flex-direction: column;
+	flex:block;
 }
 .menu li {
 	border-top: 1px solid green;
@@ -214,10 +327,102 @@ header label{
 }
 
 img{
+
 	display: flex;
-	flex-direction: column;
+	
 }
 
 
+.flexbox {
+	display: flex;  	
+	flex-flow: row wrap; 	
+	justify-content: center ; 
+	align-items: center ; 	
+	align-content: stretch; 
+	}
+	.imagenabajo{
+		
+	display: flex;  	
+	flex-flow: row wrap; 	
+	justify-content: center ; 
+	align-items: center ; 	
+	align-content: stretch; 
+	}
+ #paisajes{
+ 	
+	
+	margin:20px auto;		
+	display: flex;  	
+	flex-flow: row wrap; 	
+	justify-content: center ; 
+	align-items: center ; 	
+	align-content: stretch; 
+ }
+
+ #retratos{
+ 	
+	margin:20px auto;		
+	display: flex;  	
+	flex-flow: row wrap; 	
+	justify-content: center ; 
+	align-items: center ; 	
+	align-content: stretch; 	
+	}
+ #piepagina{
+ 	
+
+	
+	min-width:320px;
+	margin:20px auto;		
+	display: flex;  	
+	flex-flow: row wrap; 	
+	justify-content: center ; 
+	align-items: center ; 	
+	align-content: stretch; 
+	
+ }
 
 
+.contactos{
+	width:60%;
+	max-width:960px;
+	min-width:320px;
+	margin:20px auto;		
+	display: flex;  	
+	flex-flow: row wrap; 	
+	justify-content: center ; 
+	align-items: center ; 	
+	align-content: stretch; 
+}
+.terminos{
+	width:60%;
+	max-width:960px;
+	min-width:320px;
+			
+	display: flex;  	
+	flex-flow: row wrap; 	
+	justify-content: center ; 
+	align-items: center ; 	
+	align-content: stretch; 
+}
+
+.redessociales{
+	width:60%;
+	max-width:960px;
+	min-width:320px;
+	display: flex;  	
+	flex-flow: row wrap; 	
+	justify-content: center ; 
+	align-items: center ; 	
+	align-content: stretch; 
+}
+.derechos{
+	width:60%;
+	max-width:960px;
+	min-width:320px;
+	display: flex;  	
+	flex-flow: row wrap; 	
+	justify-content: center ; 
+	align-items: center ; 	
+	align-content: stretch; 
+}
